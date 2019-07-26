@@ -1,0 +1,623 @@
+{% load static %}
+<html>
+<head>
+<title>
+Application Form
+</title>
+<link href="{% static 'phd.css' %}" rel="stylesheet" type="text/css">
+<br>
+<div>
+<div class="logo">
+<img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1d/National_Institute_of_Technology%2C_Nagaland_Logo.png/220px-National_Institute_of_Technology%2C_Nagaland_Logo.png" alt="nitnagaland" width="100" height="100" style="margin-left:400px; ">
+</div>
+
+<div class="logo" style="padding-left:10px;">
+<p><b>NATIONAL INSTITUTE OF TECHNOLOGY NAGALAND</b></p>
+<p><b>Chumukedima, Dimapur-797 103</b></p>
+<p><b>Nagaland</b></p>
+
+</div>
+</div>
+<hr>
+</head>
+<body>
+<center><p>APPLICATION FORM FOR ADMISSION TO Ph.D PROGRAMME(2018-2019)</p></center>
+
+<div class="sameline" style="padding-left:200px;">
+<p>Ph.D.Programme</p>
+</div>
+<div class="sameline">
+<input type="checkbox" value="Ph.d.D.Programme" >
+</div>
+<div class="sameline" style="padding-left:150px;">
+<p>Integrated Ph.D.Programme</p>
+</div>
+<div class="sameline">
+<input type="checkbox" value="Integrated Ph.d.D.Programme" >
+</div>
+<form style="padding-left:200px" method="POST">
+ Department:<br/>
+CSE<input type="radio" value="CSE" name="CSE" ><br/>
+ECE<input type="radio" value="ECE" name="CSE" ><br/>
+EEE<input type="radio" value="EEE" name="CSE" ><br/>
+EIE<input type="radio" value="EIE" name="CSE" >
+</form>
+<form style="padding-left:200px" method="POST">
+Mode of Ph.D.:<br/>
+Full-time<input type="radio" value="Full-time" name="Full-time" ><br/>
+Sponsred<input type="radio" value="Sponsored" name="Full-time" ><br/>
+Part-time<input type="radio" value="Part-time" name="Full-time" >
+</form>
+<form style="padding-left:200px" method="POST">
+<div class="sameline">
+<p>Name of the Candidate:</p>
+</div>
+<div class="sameline">
+<input type="textarea" value="" name="Candidatename" placeholder="Ex:- Rohith Damarla" >
+</div><br/>
+<div class="sameline">
+<p>Father's/Guardian's/Spouse's Name:</p>
+</div>
+<div class="sameline">
+<input type="textarea" value="" name="Candidatename" placeholder="Ex:- Rohith Damarla" >
+</div><br/>
+<div class="sameline">
+<p>1)Date of Birth:</p>
+</div>
+<div class="sameline">
+<input type="Date" value="" name="date" placeholder="Ex:- 22/07/1999" >
+</div>
+<div class="sameline">
+<p>Age:</p>
+</div>
+<div class="sameline">
+<input type="number" value="" name="age" placeholder="Ex: 20" >
+</div><br/>
+<div class="sameline">
+<p>Gender:</p>
+</div>
+<div class="sameline">
+<span>Male<input type="radio" name="Gender"></span>
+<span>Female<input type="radio" name="Gender"></span>
+</div>
+<div class="sameline" style="padding-left:100px;">
+<p>Marital status:</p>
+</div>
+<div class="sameline">
+<span>Married<input type="radio" name="Maritalstatus"></span>
+<span>Unmarried<input type="radio" name="Maritalstatus"></span>
+</div><br/>
+<div class="sameline">
+<p>2)Physically Challenged(PH)(Person with disability of 40% and above):</p>
+</div>
+<div class="sameline">
+<span>Yes<input type="radio" name="PH"></span>
+<span>No<input type="radio" name="PH"></span>
+</div><br/>
+<div class="sameline">
+<p>3)Category:</p>
+</div>
+<div class="sameline">
+GENERAL<input type="radio" name="Category">
+OBC<input type="radio" name="Category">
+SC<input type="radio" name="Category">
+ST<input type="radio" name="Category">
+</div><br/>
+<div class="sameline">
+<p>4)Nationality:</p>
+</div>
+<div class="sameline">
+<input type="textarea" name="Nationality" value="" placeholder="Ex:- India">
+</div><br/>
+<div class="sameline">
+<p>5)Address for Communication:</p>
+</div>
+<div class="sameline">
+<textarea rows="5" cols="50"></textarea>
+</div>
+<div class="sameline">
+<p>Permanent Address:</p>
+</div>
+<div class="sameline">
+<textarea rows="5" cols="50"></textarea>
+</div><br/>
+<div class="sameline">
+Mobile:
+</div>
+<div class="sameline">
+<input type="textarea" name="Mobile" placeholder="Ex:9848998741" maxlength="10">
+</div></br>
+
+<div class="sameline">
+E-mail ID:
+</div>
+<div class="sameline">
+<input type="textarea" name="Email ID" placeholder="Ex:ramukasina@gmail.com">
+</div></br>
+
+
+
+<h3>Details of University/Institution studied </h3>
+<div class="degree">
+<p>1.Degree:</p>
+</div>
+<div class="degree">
+<select name="degree">
+<option value=-1></option>
+<option value="M.tech">M.tech</option>
+<option value="B.tech">B.tech</option>
+<option value="MSC">Msc</option>
+<option value="BSMS">BSMS</option>
+</select>
+</div>
+<p class=dis>Disciplane</p>
+<input class="dis" type="text">
+<p class="uni">University/college</p>
+<input  class="uni" type="text">
+<p class="year" >Year</p>
+<input  class="year" type="number">
+<p class="class ">Class obtained</p>
+<input class="class obtained" type="text">
+<p class="marks">% of marks or CGPA</p>
+<input class="marks" type="number">
+
+<br>
+<div class="degree">
+
+<p>2.Degree:</p>
+</div>
+<div class="degree">
+<select name="degree">
+<option value=-1></option>
+<option value="M.tech">M.tech</option>
+<option value="B.tech">B.tech</option>
+<option value="MSC">Msc</option>
+<option value="BSMS">BSMS</option>
+</select>
+</div>
+<p class=dis>Disciplane</p>
+<input class="dis" type="text">
+<p class="uni">University/college</p>
+<input  class="uni" type="text">
+<p class="year" >Year</p>
+<input  class="year" type="number">
+<p class="class ">Class obtained</p>
+<input class="class obtained" type="text">
+<p class="marks">% of marks or CGPA</p>
+<input class="marks" type="number">
+<br>
+<div class="degree">
+<p>3.Degree:</p>
+</div>
+<div class="degree">
+<select name="degree">
+<option value=-1></option>
+<option value="M.tech">M.tech</option>
+<option value="B.tech">B.tech</option>
+<option value="MSC">Msc</option>
+<option value="BSMS">BSMS</option>
+</select>
+</div>
+<p class=dis>Disciplane</p>
+<input class="dis" type="text">
+<p class="uni">University/college</p>
+<input  class="uni" type="text">
+<p class="year" >Year</p>
+<input  class="year" type="number">
+<p class="class ">Class obtained</p>
+<input class="class obtained" type="text">
+<p class="marks">% of marks or CGPA</p>
+<input class="marks" type="number">
+<br>
+<div class="degree">
+<p>4.Degree:</p>
+</div>
+<div class="degree">
+<select name="degree">
+<option value=-1></option>
+<option value="M.tech">M.tech</option>
+<option value="B.tech">B.tech</option>
+<option value="MSC">Msc</option>
+<option value="BSMS">BSMS</option>
+</select>
+</div>
+<p class=dis>Disciplane</p>
+<input class="dis" type="text">
+<p class="uni">University/college</p>
+<input  class="uni" type="text">
+<p class="year" >Year</p>
+<input  class="year" type="number">
+<p class="class ">Class obtained</p>
+<input class="class obtained" type="text">
+<p class="marks">% of marks or CGPA</p>
+<input class="marks" type="number">
+
+<h3>Examination Results:</h3>
+<div class="Bachelor">
+<p>a)Bachelor's Degree:</p>
+</div>&nbsp &nbsp
+<div class="Bachelor">
+<select>
+<option value=B.E>B.E</option>
+<option value=B.Tech>B.Tech</option>
+<option value=B.sc>B.Sc</option>
+<option value=others>Others</option>
+</select>
+</div>&nbsp &nbsp &nbsp
+<div class="Branch">
+<p >Branch</p>
+</div>
+<div class="Branch">
+<input type="text" >
+</div>
+<p>% of Marks/GPA </p>
+<div class=GPA>
+<p>Semester I</p>
+</div>&nbsp &nbsp
+<div class=GPA>
+<input type="number">
+</div>
+<br>
+<div class=GPA>
+<p>Semester II</p>
+</div>&nbsp 
+<div class=GPA>
+<input type="number">
+</div>
+<br>
+<div class=GPA>
+<p>Semester III</p>
+</div>&nbsp
+<div class=GPA>
+<input type="number">
+</div>
+<br>
+<div class=GPA>
+<p>Semester IV</p>
+</div>&nbsp
+<div class=GPA>
+<input type="number">
+</div>
+<br>
+<div class=GPA>
+<p>Semester V</p>
+</div>&nbsp&nbsp
+<div class=GPA>
+<input type="number">
+</div>
+<br>
+<div class=GPA>
+<p>Semester VI</p>
+</div>&nbsp
+<div class=GPA>
+<input type="number">
+</div>
+<br>
+<div class=GPA>
+<p>Semester VII</p>
+</div>&nbsp
+<div class=GPA>
+<input type="number">
+</div>
+<br>
+<div class=GPA>
+
+<p>Semester VIII</p>
+</div>
+<div class=GPA>
+<input type="number">
+</div>
+<br>
+<div class=GPA>
+<p>CGPA/Aggregate</p>
+</div>
+<div class=GPA>
+<input type="number">
+</div>
+<br>
+<div class=GPA>
+<p>Class</p>
+</div>
+<div class=GPA>
+<input type="number">
+</div>
+<br><br>
+<div class="Bachelor">
+<p>b)Master's Degree:</p>
+</div>&nbsp &nbsp
+<div class="Bachelor">
+<select>
+<option value=M.E>M.E</option>
+<option value=M.Tech>M.Tech</option>
+<option value=M.sc>M.Sc</option>
+<option value="M.S">M.S</option>
+<option value=others>Others</option>
+</select>
+</div>&nbsp &nbsp &nbsp
+<div class="Branch">
+<p >Branch</p>
+</div>
+<div class="Branch">
+<input type="text" >
+</div>
+<p>% of Marks/GPA </p>
+<div class=GPA>
+<p>Semester I</p>
+</div>&nbsp &nbsp
+<div class=GPA>
+<input type="number">
+</div>
+<br>
+<div class=GPA>
+<p>Semester II</p>
+</div>&nbsp 
+<div class=GPA>
+<input type="number">
+</div>
+<br>
+<div class=GPA>
+<p>Semester III</p>
+</div>&nbsp
+<div class=GPA>
+<input type="number">
+</div>
+<br>
+<div class=GPA>
+<p>Semester IV</p>
+</div>&nbsp
+<div class=GPA>
+<input type="number">
+</div>
+<br>
+<div class=GPA>
+<p>CGPA/Aggregate</p>
+</div>
+<div class=GPA>
+<input type="number">
+</div>
+<br>
+<div class=GPA>
+<p>Class</p>
+</div>
+<div class=GPA>
+<input type="number">
+</div>
+<br><br>
+
+c) Other degree/diploma programme, if any &nbsp&nbsp<input type="text" >
+
+<h3>Additional Qualification:</h3>
+&nbsp&nbsp<p>i. GATE</p>
+&nbsp&nbsp&nbsp Score<input type="number" name="Score">
+&nbsp&nbsp&nbsp Valid up to<input type="text" name="Valid">
+
+
+&nbsp&nbsp<p>iiNET / CSIR / UGC / JRF / Lectureship / NBHM / Others.</p>
+&nbsp&nbsp&nbsp Date of exam<input type="Dates" name="Score">
+&nbsp&nbsp&nbsp Valid up to<input type="text" name="Valid">
+<br><br>
+<h3>Details of Professional Experience</h3>
+(Start from the present employment)
+<br>
+<div class="pro">
+<p>1.College/Organisation </p>
+</div>
+<div class="pro">
+<input type="text" name="college">
+</div>
+<div class="pro">
+<p>Designation</p>
+</div>
+<div class="pro">
+<input type="text" name="Designation">
+</div>
+<div class="pro">
+<p>Start Date </p>
+</div>
+<div class="pro">
+<input type="Date" name="Date1">
+</div>
+<div class="pro">
+<p>End Date </p>
+</div>
+<div class="pro">
+<input type="Date" name="Date2">
+</div>
+<br>
+Nature of Job
+<br>
+<textarea rows="6" cols="60"></textarea>
+<br><br>
+
+<div class="pro">
+<p>2.College/Organisation </p>
+</div>
+<div class="pro">
+<input type="text" name="college">
+</div>
+<div class="pro">
+<p>Designation</p>
+</div>
+<div class="pro">
+<input type="text" name="Designation">
+</div>
+<div class="pro">
+<p>Start Date </p>
+</div>
+<div class="pro">
+<input type="Date" name="Date1">
+</div>
+<div class="pro">
+<p>End Date </p>
+</div>
+<div class="pro">
+<input type="Date" name="Date2">
+</div>
+<br>
+Nature of Job
+<br>
+<textarea rows="6" cols="60"></textarea>
+<br><br>
+<div class="pro">
+<p>3.College/Organisation </p>
+</div>
+<div class="pro">
+<input type="text" name="college">
+</div>
+<div class="pro">
+<p>Designation</p>
+</div>
+<div class="pro">
+<input type="text" name="Designation">
+</div>
+<div class="pro">
+<p>Start Date </p>
+</div>
+<div class="pro">
+<input type="Date" name="Date1">
+</div>
+<div class="pro">
+<p>End Date </p>
+</div>
+<div class="pro">
+<input type="Date" name="Date2">
+</div>
+<br>
+Nature of Job
+<br>
+<textarea rows="6" cols="60"></textarea>
+<br><br>
+<div class="pro">
+<p>4.College/Organisation </p>
+</div>
+<div class="pro">
+<input type="text" name="college">
+</div>
+<div class="pro">
+<p>Designation</p>
+</div>
+<div class="pro">
+<input type="text" name="Designation">
+</div>
+<div class="pro">
+<p>Start Date </p>
+</div>
+<div class="pro">
+<input type="Date" name="Date1">
+</div>
+<div class="pro">
+<p>End Date </p>
+</div>
+<div class="pro">
+<input type="Date" name="Date2">
+</div>
+<br>
+Nature of Job:
+<br>
+<textarea rows="6" cols="60"></textarea>
+<br><br><br>
+<h3>Title of U.G /P.G Project:</h3>
+<textarea rows="10" cols="80"></textarea>
+<br>
+<h3>Interested area of research:</h3>
+<textarea rows="6" cols="70"></textarea>
+<br>
+<h3>Details of publication in refereed Journals/ Proceedings of Seminar/ Conference:</h3>
+<textarea rows="10" cols="100"></textarea><br/>
+<div class="sameline" >
+<p><h3> 13)Application Category:</h3></p>
+</div><br/>
+<div  class="sameline" >
+Full-Time<input type="radio" name="Application-Category"><br/>
+Part-Time<input type="radio" name="Application-Category"><br/>
+Sponsored<input type="radio" name="Application-Category"><br/>
+</div><br/>
+<div class="sameline" >
+<p>Department:</p>
+</div>
+<div class="sameline">
+<select>
+<option value="CSE">CSE</option>
+<option value="ECE">ECE</option>
+<option value="EEE">EEE</option>
+<option value="EIE">EIE</option>
+</select>
+</div><br/>
+<div class="sameline" >
+<p>Specialization/Area opted for research:</p>
+</div>
+<div class="sameline">
+<textarea rows="4" cols="50"></textarea>
+</div><br/>
+<h3>Upload the following certificates</h3>
+<div class="certificate">
+<p>i)Matriculation certificate:</p></div>
+<div class="certificate"><input type="file" name="matric certificate">
+</div>
+<br>
+<div class="certificate">
+<p>ii)Bachelor’s Degree Certificate:</p></div>
+<div class="certificate">
+<input type="file" name="degree certificate">
+</div><br>
+<div class="certificate">
+<p>iii)Master’s Degree Certificate:</p></div>
+<div class="certificate"><input type="file" name="Master certificate">
+</div><br>
+<div class="certificate"><p>iv)Gate Score:</p>
+</div>
+<div class="certificate"><input type="file" name="gate score"></div>
+<br>
+
+<div class="certificate"><p>v)Doctor's Certificate (in case of PH):</p>
+</div>
+<div class="certificate"><input type="file" name="doctor's certificate"></div>
+<br>
+<div class="certificate"><p>vi)Community Letter:</p>
+</div>
+<div class="certificate"><input type="file" name="community letter"></div>
+<br>
+<div class="certificate"><p>vii)Experience Letter:</p>
+</div>
+<div class="certificate"><input type="file" name="gate score"></div>
+<br>
+<p>Demand Draft - Drawn in favour of DIRECTOR,NIT NAGALAND for an amount of Rs.1,000/-(Rs.500/- in case of SC/ST candidates) payable at Chumukedima,Dimapur.</p>
+<div class="sameline" >
+<p>D.D No. and Date:</p>
+</div>
+<div class="sameline">
+<input type="textarea" name="D.D No. and Date" value="">
+</div><br/>
+<div class="sameline" >
+<p>Issued Bank:</p>
+</div>
+<div class="sameline">
+<input type="textarea" name="Issued Bank" value="">
+</div><br/>
+<div class="sameline" >
+<p>Amount:</p>
+</div>
+<div class="sameline">
+<input type="textarea" name="Amount" value="">
+</div><br/>
+<center><h3>DECLARATION</h3></center>
+<p>I herby declare that I had carefully read the instructions and particulars relevant to the admission and the entries made in this application form are correct to the best of my knowledge and belief </p>
+<div>
+<span><p>Place:</p></span>
+<span><input type="textarea" value=""></span>
+</div>
+<div>
+<span><p>Date:</p></span>
+<span><input type="Date"></span>
+</div>
+<center><button>SUBMIT</button></center>
+</form>
+</body>
+
+
+
+
+
+
+
+</html>

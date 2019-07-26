@@ -1,0 +1,36 @@
+.logo{
+ display:inline-block;
+  text-align:center;
+   
+}
+.sameline{
+display:inline-block;
+}
+.degree{
+display: inline-block;
+}
+.dis{
+display: inline-block;
+}
+.uni{
+display: inline-block;
+}
+.year{
+display: inline-block;
+}
+.class {
+display: inline-block;
+}
+.marks{
+display: inline-block;
+}
+.Branch{
+display: inline-block;
+}
+.Bachelor{
+display: inline-block;
+}
+.GPA,.pro,.certificate{
+display:inline-block;
+}
+
